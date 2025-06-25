@@ -1,3 +1,4 @@
+"use server";
 import { fetchApiClient } from "@/lib/oneentry";
 
 export const searchProductsAction = async ({ query }) => {
@@ -6,7 +7,7 @@ export const searchProductsAction = async ({ query }) => {
 
     const products = await apiClient?.Products.searchProduct(query, "en_US");
 
-    return products || []; // Return product items or empty array
+    return products || [];
   } catch (error) {
     console.error("Error searching products:", error);
     throw new Error(
