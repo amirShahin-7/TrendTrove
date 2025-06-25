@@ -213,11 +213,8 @@ export default function CartPage() {
             >
               Continue Shopping
             </Button>
-            <Link href="/" passHref>
-              <Button
-                as="a"
-                className="w-full mt-2 bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 hover:from-green-500 hover:via-blue-600 hover:to-purple-600 text-white font-semibold cursor-pointer"
-              >
+            <Link href="/" className="block w-full mt-2">
+              <Button className="w-full bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 hover:from-green-500 hover:via-blue-600 hover:to-purple-600 text-white font-semibold cursor-pointer">
                 Go to Home Page
               </Button>
             </Link>
@@ -226,11 +223,8 @@ export default function CartPage() {
 
         {!isLoading && cart.length > 0 && (
           <div className="flex justify-center mt-8">
-            <Link href="/" passHref>
-              <Button
-                as="a"
-                className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 hover:from-green-500 hover:via-blue-600 hover:to-purple-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300"
-              >
+            <Link href="/" className="w-full flex justify-center">
+              <Button className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 hover:from-green-500 hover:via-blue-600 hover:to-purple-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300">
                 Back to Home
               </Button>
             </Link>

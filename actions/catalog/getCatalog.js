@@ -1,3 +1,5 @@
+"use server";
+
 import { fetchApiClient } from "@/lib/oneentry";
 
 export const getCatalogs = async () => {
