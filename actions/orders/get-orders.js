@@ -1,3 +1,5 @@
+"use server";
+
 import { fetchApiClient } from "@/lib/oneentry";
 import { cookies } from "next/headers";
 

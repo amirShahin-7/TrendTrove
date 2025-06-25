@@ -1,4 +1,5 @@
 "use server";
+
 import { fetchApiClient } from "@/lib/oneentry";
 import { cookies } from "next/headers";
 
@@ -34,10 +35,10 @@ export default async function createOrder(orderData) {
 
     return paymentSession.paymentUrl;
   } catch (err) {
-    console.error("Error during order and payment processing:", err);
+    
     throw new Error(
       `Order or payment session creation failed. ${
-        err instanceof Error ? err.message : "Unknown error occurred."
+        err instanceof Error ? err.message : "Unknown error  occurred."
       }`
     );
   }
